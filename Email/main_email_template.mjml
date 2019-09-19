@@ -1,0 +1,166 @@
+<mjml>
+  <mj-head>
+    <mj-title>%%subject%%</mj-title>
+    <!-- Set A Custom Webfont -->
+    <mj-font name="LyftPro-Bold" href="http://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Bold.otf" />
+    <mj-font name="LyftPro-Regular" href="http://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Regular.otf" />
+    <mj-font name="LyftPro-SemiBold" href="https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-SemiBold.otf" />
+    <mj-attributes>
+
+      <mj-class name="LyftPro-Bold" font-family="'LyftPro-Bold',Arial,Helvetica,sans-serif" font-weight="800" />
+      <mj-class name="LyftPro-Regular" font-family="'LyftPro-Regular',Arial,Helvetica,sans-serif" font-weight="normal" />
+      <mj-class name="LyftPro-SemiBold" font-family="'LyftPro-SemiBold',Arial,Helvetica,sans-serif" font-weight="600" />
+
+
+      <!-- Default Styles for All Elements -->
+      <mj-all font-family="'LyftPro-Regular',Arial,Helvetica,sans-serif" font-size="16px" line-height="20px" />
+
+    </mj-attributes>
+
+    <!-- Styles Place In Head -->
+    <mj-style>
+      @font-face {
+        font-family: 'LyftPro-Bold';
+        src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Bold.otf) format("opentype");
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'LyftPro-Regular';
+        src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Regular.otf) format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'LyftPro-SemiBold';
+        src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-SemiBold.otf) format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .boxShadow {
+        box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+      }
+    </mj-style>
+    <mj-style>
+      @media (max-width:480px) {
+      td.mobileCenter > div {
+      width: 100% !important;
+      text-align: center !important;
+      }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body width="550px" background-color="#fff">
+    <!-- Intro Text -->
+    <mj-section background-color="#AED8F7" padding="0px">
+      <mj-column>
+        <mj-text align="left">
+          <div class="pardot-region" style="display:none;">It only takes 3 minutes, and doesn't cost a penny</div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Email Header -->
+    <mj-section background-color="#AED8F7" padding-bottom="20px">
+      <mj-column>
+        <mj-image href="#" src="https://storage.pardot.com/571903/101681/Lyft_Business_logo_mobile.png" width="150px" fluid-on-mobile="false" align="left" />
+        <mj-text mj-class="LyftPro-Bold" color="#1850A5" font-size="44px" line-height="46px">
+          <div class="pardot-region">Let's get your people moving</div>
+        </mj-text>
+        <mj-text mj-class="LyftPro-Regular" color="#1850A5">
+          <div class="pardot-region">Want to offer Lyft rides to your team members, patients, customers, students, or anyone else? We'll work with you to set up a transportation program that's more affordable than your current options. It only takes a few minutes to sign up – and it's free to get started.</div>
+        </mj-text>
+        <mj-button background-color="#fff" color="#000" font-weight="bold" border-radius="30px" padding="40px 0px">
+          CONTINUE SIGNUP
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#AED8F7" padding-top="5px" padding-bottom="5px">
+      <mj-column width="20%">
+        <mj-image src="https://storage.pardot.com/571903/101687/Money_bag.png" alt="1" width="40px" align="center" padding-top="5px" />
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text mj-class="LyftPro-Bold" css-class="mobileCenter" color="#1850A5" font-size="20px" line-height="24px" font-weight="bold" padding-top="0px" padding-bottom="0px">
+          <div class="pardot-region">Reward your business travelers</div>
+        </mj-text>
+        <mj-text mj-class="LyftPro-Regular" css-class="mobileCenter" color="#1850A5">
+          <div class="pardot-region">Automatic expensing? Check. Personal travel benefits? Check. Easy admin tools? Yep, those too.</div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#AED8F7" padding-top="5px" padding-bottom="5px">
+      <mj-column width="20%">
+        <mj-image src="https://storage.pardot.com/571903/101689/car.png" alt="2" width="40px" align="center" padding-top="5px" />
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text mj-class="LyftPro-Bold" css-class="mobileCenter" color="#1850A5" font-size="20px" line-height="24px" font-weight="bold" padding-top="0px" padding-bottom="0px">
+          <div class="pardot-region">Request rides for anyone</div>
+        </mj-text>
+        <mj-text mj-class="LyftPro-Regular" css-class="mobileCenter" color="#1850A5">
+          <div class="pardot-region">Order rides for patients, customers, grandparents, or whoever you need to move with our Concierge platform – no smartphone or Lyft app required.</div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#AED8F7" padding-top="5px" padding-bottom="5px">
+      <mj-column width="20%">
+        <mj-image src="https://storage.pardot.com/571903/101691/coin.png" alt="3" width="40px" align="center" padding-top="5px" />
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text mj-class="LyftPro-Bold" css-class="mobileCenter" color="#1850A5" font-size="20px" line-height="24px" font-weight="bold" padding-top="0px" padding-bottom="0px">
+          <div class="pardot-region">Offer free ride credit</div>
+        </mj-text>
+        <mj-text mj-class="LyftPro-Regular" css-class="mobileCenter" color="#1850A5">
+          <div class="pardot-region">Drop ride credit directly into your team members', customers', or students' Lyft accounts.</div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#AED8F7" padding-top="5px" padding-bottom="5px">
+      <mj-column width="20%">
+        <mj-image src="https://storage.pardot.com/571903/101693/calendar.png" alt="4" width="40px" align="center" padding-top="5px" />
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text mj-class="LyftPro-Bold" css-class="mobileCenter" color="#1850A5" font-size="20px" line-height="24px" font-weight="bold" padding-top="0px" padding-bottom="0px">
+          <div class="pardot-region">Cover your guests' rides to the event</div>
+        </mj-text>
+        <mj-text mj-class="LyftPro-Regular" css-class="mobileCenter" color="#1850A5">
+          <div class="pardot-region">Set custom rules like time and location requirements so you can control how the ride budget gets spent.</div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#AED8F7" padding="0px">
+      <mj-column padding-bottom="0px">
+        <mj-image src="https://go.lyftbusiness.com/l/571903/2019-09-17/bqtxd/571903/101701/premier_white_bg.png" width="550px" alt="" padding="0px" fluid-on-mobile="true" />
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#ffdcc0">
+      <mj-column width="20%">
+        <mj-image src="https://go.lyftbusiness.com/l/571903/2019-09-17/bqv1l/571903/101717/bubble.png" width="40px" align="center" padding-top="5px" />
+      </mj-column>
+      <mj-column width="80%">
+        <mj-text mj-class="LyftPro-Bold" css-class="mobileCenter" color="#5245c2" font-size="20px" line-height="24px" font-weight="bold" padding-top="0px" padding-bottom="0px">
+          <div class="pardot-region">Want to talk to a real human?</div>
+        </mj-text>
+        <mj-text mj-class="LyftPro-Regular" css-class="mobileCenter" color="#5245c2">
+          <div class="pardot-region">We meant what we said – we're here for you. <a href="#" style="color: #5345c2 !important; text-decoration: underline !important;"><span style="color: #5345c2 !important; text-decoration: underline !important;">Get in touch &rsaquo; </span></a> </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section>
+      <mj-column>
+        <mj-text color="#11111f" font-size="11px" line-height="13px">
+          <div pardot-region="">*Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</div>
+        </mj-text>
+        <mj-divider border-width="1px" border-color="#d8d8d8" border-style="solid" />
+        <mj-text css-class="mobileCenter" color="#a9a9a9" font-size="12px" line-height="18px">
+          <a href="%%unsubscribe%%" style="color: #a9a9a9 !important; text-decoration: none !important;"><span style="color: #a9a9a9 !important; text-decoration: none !important;">Unsubscribe</span></a> | <a href="https://www.lyftbusiness.com/contact-us/" style="color: #a9a9a9 !important; text-decoration: none !important;"><span style="color: #a9a9a9 !important; text-decoration: none !important;">Contact</span></a>
+        </mj-text>
+        <mj-text css-class="mobileCenter" color="#a9a9a9" font-size="12px" line-height="18px">
+          <a href="%%unsubscribe%%" style="color: #a9a9a9 !important; text-decoration: none !important;"><span style="color: #a9a9a9 !important; text-decoration: none !important;">185 Berry St. #5000, San Francisco, CA 94107 </span></a><br />
+          &copy; %%current_year_YYYY%% Lyft, Inc.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
