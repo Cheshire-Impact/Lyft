@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="https://go.lyftbusiness.com" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="https://go.lyftbusiness.com/l/571903/2018-08-06/6cwd8/571903/62605/lyft_favicon_32x32.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>%%title%%</title>
+    <style>
+    @font-face {
+  font-family: "LyftPro-Bold";
+  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LyftPro-Regular";
+  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LyftPro-SemiBold";
+  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-SemiBold.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "LyftPro-Regular", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  height: 125px;
+}
+
+.navbar .container {
+  width: 86%;
+  max-width: unset;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 479px) {
+  .navbar .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.navbar button {
+  background-color: #ff00bf;
+  color: #fff;
+  border-color: #ff00bf;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 375px) {
+  .navbar button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}
+
+.navbar button:hover {
+  background-color: #ff00bf;
+  color: #fff;
+  border-color: #ff00bf;
+  -webkit-box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar button:active {
+  background-color: #ff00bf;
+  color: #fff;
+  border-color: #ff00bf;
+  -webkit-box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar button:focus {
+  background-color: #ff00bf;
+  color: #fff;
+  border-color: #ff00bf;
+  -webkit-box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+#ceros {
+  margin-top: 125px;
+}
+
+#formOuter {
+  background-color: #f8d8e4;
+}
+
+.modal .modal-dialog {
+  max-width: unset;
+  margin: 0;
+  width: 100%;
+}
+
+.modal .modal-dialog .modal-content {
+  border: none;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  background-color: #f8d8e4;
+  border-radius: 0;
+  border: none;
+}
+
+.modal .modal-dialog .modal-content .modal-body {
+  background-color: #f8d8e4;
+  border-radius: 0;
+  border: none;
+}
+
+.modal-footer {
+  background-color: #f8d8e4;
+  border-radius: 0;
+  border: none;
+}
+
+.modal-footer button {
+  color: #0f7abc;
+  background-color: transparent;
+  border-color: #0f7abc;
+  border-width: 3px;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.modal-footer button i {
+  width: 32px;
+  height: 32px;
+}
+
+#pardot-form {
+  color: #666666;
+  font-family: "LyftPro-Regular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0.5em 0 1em;
+  padding: 0;
+}
+
+#pardot-form p {
+  margin: 0;
+  padding: 15px 15px 15px 0px;
+}
+
+#pardot-form p.required label {
+  background-image: none;
+}
+
+#pardot-form p.required label:after {
+  content: "";
+  color: inherit;
+}
+
+#pardot-form p input {
+  background-color: #fff;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0px;
+  padding: 10px;
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+#pardot-form p.pd-select select {
+  background-color: #fff;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0px;
+  padding: 10px;
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+#pardot-form p.pd-select label {
+  color: #666666;
+  opacity: 0.8;
+  position: absolute;
+  top: 24px;
+  left: 12px;
+  padding-left: 0px;
+  text-align: left;
+  pointer-events: none;
+}
+
+#pardot-form p.submit {
+  margin-left: auto;
+}
+
+#pardot-form p.submit input {
+  max-width: 200px;
+  -webkit-box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-width: 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #ffffff;
+  color: #000001 !important;
+  font-family: "LyftPro-Regular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0;
+  text-decoration: none !important;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+#pardot-form p span.error {
+  clear: left;
+  display: block;
+  font-weight: bold;
+  margin-top: 2px;
+  padding-left: 166px;
+}
+
+#pardot-form p.errors {
+  padding-left: 15px;
+}
+/*# sourceMappingURL=get_started_form.css.map */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar fixed-top navbar-light bg-light"
+      >
+        <div class="container no-wrap d-inline-flex">
+            <a
+              href="https://lyftbusiness.com/"><img class="img-fluid" style="padding-right: 10px;"
+                src="https://go.lyftbusiness.com/l/571903/2019-10-01/c1wxq/571903/103519/lyftbusiness_logo_blue.png"
+                alt="Lyft Business"
+                width="225"
+            /></a>
+              <button
+                class="btn my-2 my-sm-0"
+                type="button"
+                data-toggle="modal"
+                data-target="#pardotForm"
+              >
+                Get Started
+              </button>
+            </div>
+        </div>
+      </nav>
+    </header>
+    <section id="ceros">
+      <div
+        style="position: relative;width: auto;padding: 0 0 445.83%;height: 0;top: 0;left: 0;bottom: 0;right: 0;margin: 0;border: 0 none"
+        id="experience-5d8e10a826078"
+        data-aspectRatio="0.2243"
+        data-mobile-aspectRatio="0.0757"
+      >
+        <iframe
+          allowfullscreen
+          src="//view.ceros.com/lyft/health-plans-landing-page?heightOverride=6420&mobileHeightOverride=10569"
+          style="position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: 0;padding: 0;border: 0 none;height: 1px;width: 1px;min-height: 100%;min-width: 100%"
+          frameborder="0"
+          class="ceros-experience"
+          scrolling="no"
+        ></iframe>
+      </div>
+
+      <!-- Pardot Form Modal -->
+      <div
+        class="modal fade"
+        id="pardotForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="pardotFormLabel"
+        aria-hidden="true"
+      ><section id="formOuter">
+        <div class="container">
+          <div class="row">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title" id="pardotFormLabel"><a href="https://lyftbusiness.com/"><img
+                src="https://go.lyftbusiness.com/l/571903/2019-10-01/c1wxq/571903/103519/lyftbusiness_logo_blue.png"
+                alt="Lyft Business"
+                width="225"
+            /></a></div>
+              </button>
+            </div>
+            <div class="modal-body">
+               %%content%%
+            </div>
+          </div>
+        </div>
+        </div></div>
+        <div class="modal-footer">
+            <button
+              type="button"
+              class="btn"
+              data-dismiss="modal"
+            >
+            <i class="fa fa-chevron-up"></i>
+            </button>
+          </div>
+      </section>
+      </div>
+
+
+      <script
+        type="text/javascript"
+        src="//view.ceros.com/scroll-proxy.min.js"
+        data-ceros-origin-domains="view.ceros.com"
+      ></script>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        $(document).ready(function() {
+          $(".field-label").each(function(index) {
+            if (
+              $(this)
+                .parent()
+                .hasClass("required") == true
+            ) {
+              var labelText = $(this).html() + "*";
+            } else {
+              var labelText = $(this).html();
+            }
+  
+            if (
+              $(this)
+                .parent()
+                .hasClass("pd-select") == false
+            ) {
+              $(this)
+                .next()
+                .attr("placeholder", labelText);
+              $(this).hide();
+            }
+          });
+
+          // Add asterisk to required select boxes
+
+          $(".pd-select.required label").append("*");
+  
+          // Hide Select Box Label When Selection Is Made
+  
+          $("select").change(function() {
+            if (
+              $(this)
+                .children("option:selected")
+                .text() != ""
+            ) {
+              $(this)
+                .prev("label")
+                .hide();
+            } else {
+              $(this)
+                .prev("label")
+                .show();
+            }
+          });
+        });
+
+        // Display the Modal if Errors
+
+        var errorCheck = $("p.error").length;
+
+        if(errorCheck > 0 ){
+          $('#pardotForm').modal('show')
+        }
+
+      </script>
+  </body>
+</html>
