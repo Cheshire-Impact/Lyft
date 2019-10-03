@@ -5,25 +5,20 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="%%description%%" />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    />
     <title>%%title%%</title>
     <style>
+      html {
+        background-color: #f8d8e4;
+      }
       #pardot-form {
         color: #666666;
+        background-color: #f8d8e4;
         font-family: "LyftPro-Regular", Arial, Helvetica, sans-serif;
         font-size: 14px;
         line-height: 18px;
@@ -61,6 +56,7 @@
       }
 
       #pardot-form p.pd-select select {
+        width: 100%;
         background-color: #fff;
         border-radius: 5px;
         border-style: solid;
@@ -68,7 +64,6 @@
         padding: 10px;
         -webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
         box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
-        width: 110%;
         -webkit-appearance: none;
         -moz-appearance: none;
       }
@@ -82,7 +77,6 @@
         padding-left: 0px;
         text-align: left;
         pointer-events: none;
-        font-size: 11px;
       }
 
       #pardot-form p.pd-select.required label {
