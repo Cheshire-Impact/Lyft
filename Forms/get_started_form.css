@@ -24,7 +24,8 @@
 }
 
 .navbar {
-  height: 125px;
+  height: 100px;
+  background-color: #fff;
 }
 
 .navbar .container {
@@ -38,6 +39,12 @@
   .navbar .container {
     width: 100%;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar img {
+    width: 150px;
   }
 }
 
@@ -85,7 +92,7 @@
 }
 
 #ceros {
-  margin-top: 125px;
+  margin-top: 100px;
 }
 
 #formOuter {
@@ -178,6 +185,7 @@
           box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
   width: 100%;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 #pardot-form p.pd-select label {
@@ -189,6 +197,10 @@
   padding-left: 0px;
   text-align: left;
   pointer-events: none;
+}
+
+#pardot-form p.pd-select.required label {
+  font-weight: normal;
 }
 
 #pardot-form p.submit {

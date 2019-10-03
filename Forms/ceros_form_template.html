@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="https://go.lyftbusiness.com" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="%%description%%" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>%%title%%</title>
+    <style>
+      #pardot-form {
+        color: #666666;
+        font-family: "LyftPro-Regular", Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0.5em 0 1em;
+        padding: 0;
+      }
+
+      #pardot-form p {
+        margin: 0;
+        padding: 15px 15px 15px 0px;
+      }
+
+      #pardot-form p.form-field {
+        position: relative;
+      }
+
+      #pardot-form p.required label {
+        background-image: none;
+      }
+
+      #pardot-form p.required label:after {
+        content: "";
+        color: inherit;
+      }
+
+      #pardot-form p input {
+        background-color: #fff;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 0px;
+        padding: 10px;
+        -webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+        width: 100%;
+      }
+
+      #pardot-form p.pd-select select {
+        background-color: #fff;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 0px;
+        padding: 10px;
+        -webkit-box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
+        width: 110%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+
+      #pardot-form p.pd-select label {
+        color: #666666;
+        opacity: 0.8;
+        position: absolute;
+        top: 24px;
+        left: 12px;
+        padding-left: 0px;
+        text-align: left;
+        pointer-events: none;
+        font-size: 11px;
+      }
+
+      #pardot-form p.pd-select.required label {
+        font-weight: normal;
+      }
+
+      #pardot-form p.submit {
+        margin-left: auto;
+      }
+
+      #pardot-form p.submit input {
+        max-width: 200px;
+        -webkit-box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+        border: none;
+        border-width: 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: #ffffff;
+        color: #000001 !important;
+        font-family: "LyftPro-Regular", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 20px;
+        margin: 0;
+        text-decoration: none !important;
+        padding: 10px 30px;
+        border-radius: 30px;
+      }
+
+      #pardot-form p span.error {
+        clear: left;
+        display: block;
+        font-weight: bold;
+        margin-top: 2px;
+        padding-left: 166px;
+      }
+
+      #pardot-form p.errors {
+        padding-left: 15px;
+      }
+      /*# sourceMappingURL=get_started_form.css.map */
+    </style>
+  </head>
+  <body>
+    %%content%%
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function() {
+        $(".field-label").each(function(index) {
+          if (
+            $(this)
+              .parent()
+              .hasClass("required") == true
+          ) {
+            var labelText = $(this).html() + "*";
+          } else {
+            var labelText = $(this).html();
+          }
+
+          if (
+            $(this)
+              .parent()
+              .hasClass("pd-select") == false
+          ) {
+            $(this)
+              .next()
+              .attr("placeholder", labelText);
+            $(this).hide();
+          }
+        });
+
+        // Add asterisk to required select boxes
+
+        $(".pd-select.required label").append("*");
+
+        // Hide Select Box Label When Selection Is Made
+
+        $("select").change(function() {
+          if (
+            $(this)
+              .children("option:selected")
+              .text() != ""
+          ) {
+            $(this)
+              .prev("label")
+              .hide();
+          } else {
+            $(this)
+              .prev("label")
+              .show();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

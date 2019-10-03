@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>%%title%%</title>
     <style>
-    @font-face {
+  @font-face {
   font-family: "LyftPro-Bold";
   src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Bold.otf) format("opentype");
   font-weight: bold;
@@ -41,7 +41,8 @@
 }
 
 .navbar {
-  height: 125px;
+  height: 100px;
+  background-color: #fff;
 }
 
 .navbar .container {
@@ -55,6 +56,12 @@
   .navbar .container {
     width: 100%;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .navbar img {
+    width: 150px;
   }
 }
 
@@ -102,7 +109,7 @@
 }
 
 #ceros {
-  margin-top: 125px;
+  margin-top: 100px;
 }
 
 #formOuter {
@@ -195,6 +202,7 @@
           box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.2);
   width: 100%;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 #pardot-form p.pd-select label {
@@ -206,6 +214,10 @@
   padding-left: 0px;
   text-align: left;
   pointer-events: none;
+}
+
+#pardot-form p.pd-select.required label {
+  font-weight: normal;
 }
 
 #pardot-form p.submit {
@@ -247,9 +259,16 @@
     </style>
   </head>
   <body>
+     <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-58RWRGC');</script>
+    <!-- End Google Tag Manager -->
     <header>
       <nav
-        class="navbar fixed-top navbar-light bg-light"
+        class="navbar fixed-top navbar-light"
       >
         <div class="container no-wrap d-inline-flex">
             <a
