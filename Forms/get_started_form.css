@@ -121,6 +121,15 @@
   border: none;
 }
 
+.modal .modal-dialog .modal-content .modal-body .modal-form-header {
+  width: 387px;
+  padding: 20px 0px;
+  font-size: 50px;
+  line-height: 50px;
+  color: #0f7abc;
+  font-family: "LyftPro-Bold", Arial, Helvetica, sans-serif;
+}
+
 .modal-footer {
   background-color: #f8d8e4;
   border-radius: 0;
