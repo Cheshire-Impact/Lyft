@@ -3,131 +3,87 @@
 @import url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-SemiBold.otf);
 @font-face {
   font-family: "ProximaNova";
-  src: local("ProximaNova-Regular"),
-    url("https://cdn.lyft.com/static/coreui/ProximaNova-Regular.woff2")
-      format("woff2"),
-    url("https://cdn.lyft.com/static/coreui/ProximaNova-Regular.woff")
-      format("woff");
+  src: local("ProximaNova-Regular"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Regular.woff2") format("woff2"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: fallback;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: local("ProximaNova-RegularItalic"),
-    url("https://cdn.lyft.com/static/coreui/ProximaNova-RegularItalic.woff2")
-      format("woff2"),
-    url("https://cdn.lyft.com/static/coreui/ProximaNova-RegularItalic.woff")
-      format("woff");
+  src: local("ProximaNova-RegularItalic"), url("https://cdn.lyft.com/static/coreui/ProximaNova-RegularItalic.woff2") format("woff2"), url("https://cdn.lyft.com/static/coreui/ProximaNova-RegularItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-display: fallback;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: local("ProximaNova-Medium"),
-    url("https://cdn.lyft.com/static/coreui/ProximaNova-Medium.woff2")
-      format("woff2"),
-    url("https://cdn.lyft.com/static/coreui/ProximaNova-Medium.woff")
-      format("woff");
+  src: local("ProximaNova-Medium"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Medium.woff2") format("woff2"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: fallback;
 }
 @font-face {
   font-family: "ProximaNova";
-  src: local("ProximaNova-Bold"),
-    url("https://cdn.lyft.com/static/coreui/ProximaNova-Bold.woff2")
-      format("woff2"),
-    url("https://cdn.lyft.com/static/coreui/ProximaNova-Bold.woff")
-      format("woff");
+  src: local("ProximaNova-Bold"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Bold.woff2") format("woff2"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: fallback;
 }
 @font-face {
   font-family: "LyftPro-Bold";
-  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Bold.otf)
-    format("opentype");
+  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Bold.otf) format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "LyftPro-Regular";
-  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Regular.otf)
-    format("opentype");
+  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Regular.otf) format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "LyftPro-SemiBold";
-  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-SemiBold.otf)
-    format("opentype");
+  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-SemiBold.otf) format("opentype");
   font-weight: normal;
   font-style: normal;
 }
-button.cta {
-  font-family: "LyftPro-SemiBold", Helvetica, Arial, sans-serif;
-  background: #fff !important;
-  text-transform: uppercase;
-  font-weight: 800;
-  padding: 12px 22px;
-  font-size: 13px;
-  line-height: 16px;
-  border: none;
-  border-radius: 28px;
-  color: #11111f;
-  -webkit-box-shadow: 0px 4px 0px 0px #7e808f;
-  -moz-box-shadow: 0px 4px 0px 0px #7e808f;
-  box-shadow: 0px 4px 0px 0px #7e808f;
-  width: 217px;
-  height: 56px;
-}
-button.cta a {
-  display: block;
-  font-size: 16px;
-  line-height: 19px;
-  color: #11111f !important;
-  text-decoration: none;
-}
-
 .bg-primary {
-  background-color: #ff00bf !important;
+  background-color: #FF00BF !important;
 }
 
 .bg-secondary {
-  background-color: #8f91ff !important;
+  background-color: #8F91FF !important;
 }
 
 .bg-secondary-darker {
-  background-color: #5245c2 !important;
+  background-color: #5245C2 !important;
 }
 
 .text-primary {
-  color: #ff00bf !important;
+  color: #FF00BF !important;
 }
 
 .text-secondary {
-  color: #8f91ff !important;
+  color: #8F91FF !important;
 }
 
 .btn-primary {
-  background-color: #ff00bf !important;
-  border-color: #ff00bf !important;
+  background-color: #FF00BF !important;
+  border-color: #FF00BF !important;
 }
 
 .btn-secondary {
-  background-color: #8f91ff !important;
-  border-color: #8f91ff !important;
+  background-color: #8F91FF !important;
+  border-color: #8F91FF !important;
 }
 
 body {
   font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
-  color: #11111f;
+  color: #11111F;
 }
 
 a {
-  color: #ff00bf !important;
+  color: #FF00BF !important;
   text-decoration: underline;
 }
 
@@ -141,14 +97,12 @@ h6 {
   font-family: "LyftPro-Bold", Helvetica, Arial, sans-serif;
 }
 
-main,
-section {
+main, section {
   padding: 2rem 0;
 }
 
 @media (min-width: 992px) {
-  main,
-  section {
+  main, section {
     padding: 6rem 0;
   }
 }
@@ -250,14 +204,14 @@ footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background: linear-gradient(#eee 5%, 15%, #fff 30%);
-  color: #11111f;
+  color: #11111F;
   font-size: 0.8em;
   line-height: 24px;
   vertical-align: middle;
   padding: 2rem 0;
 }
 footer a {
-  color: #11111f !important;
+  color: #11111F !important;
   text-decoration: none;
 }
 footer i {
@@ -299,7 +253,6 @@ footer i {
 }
 
 #pardot-form {
-  max-width: 100%;
   background-color: transparent;
   font-family: "ProximaNova-Regular", Helvetica, Arial, sans-serif;
 }
@@ -319,7 +272,7 @@ footer i {
 }
 #pardot-form select {
   background-image: url(https://go.lyftbusiness.com/l/571903/2020-03-17/fynvm/571903/118828/darr.png);
-  opacity: 0.3;
+  opacity: .3;
   background-color: transparent;
   color: white;
   -webkit-appearance: none;
@@ -336,15 +289,14 @@ footer i {
   text-indent: 10px;
 }
 #pardot-form select option {
-  color: #11111f;
+  color: #11111F;
 }
 #pardot-form p:not([class]) {
-  color: #fff;
-  padding: 1em 0;
-  font-size: 16px;
-  line-height: 19px;
-}
-#pardot-form h2:not([class]) {
+  font-weight: 400;
+  width: 100%;
+  float: left;
+  padding: 0;
+  margin: 1em 0;
   color: #fff;
 }
 #pardot-form p.form-field {
@@ -442,22 +394,12 @@ footer i {
   line-height: 16px;
   border: none;
   border-radius: 28px;
-  color: #11111f;
+  color: #11111F;
   -webkit-box-shadow: 0px 4px 0px 0px #7e808f;
   -moz-box-shadow: 0px 4px 0px 0px #7e808f;
   box-shadow: 0px 4px 0px 0px #7e808f;
   width: 217px;
   height: 56px;
-  max-width: 100%;
-}
-
-#pardot-form p span.description {
-  margin-left: 10px;
-  color: #fff;
-}
-
-#pardot-form p span.description a {
-  color: #fff !important;
 }
 
 p.errors,
@@ -568,7 +510,7 @@ p.error textarea {
 .pd-radio input:checked + label:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  color: #ff00bf;
+  color: #FF00BF;
 }
 
 .pd-radio input:focus + label {
@@ -623,9 +565,9 @@ p.error textarea {
 .pd-checkbox input:checked + label:before {
   content: "\f00c";
   font-family: "FontAwesome";
-  background: #ff00bf;
+  background: #FF00BF;
   color: #fff;
-  border-color: #ff00bf;
+  border-color: #FF00BF;
 }
 
 .pd-checkbox input {
