@@ -1,0 +1,28 @@
+{% extends "layout/_layout.html" %}
+
+
+{% block custom_css %}
+<style>
+    /* Custom Styles */
+</style>
+{% endblock %}
+
+
+{% block header %}
+{% include "sections/_header.html"%}
+{% endblock %}
+
+
+{% block content %}
+{% include "sections/_three-icons.html"%}
+{% include "sections/_video.html"%}
+{% include "sections/_four-icons.html"%}
+{% include "sections/_testimonial.html"%}
+{% include "sections/_steps.html"%}
+
+{% endblock %}
+
+{% block footer %}
+{% include "sections/_footer.html"%}
+{% include "sections/_modal.html"%}
+{% endblock %}

@@ -1,0 +1,96 @@
+/* -------------------------------------------------------------------------- */
+/*                               Font Variables                               */
+/* -------------------------------------------------------------------------- */
+
+@import url(http://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Bold.otf);
+@import url(http://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Regular.otf);
+@import url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-SemiBold.otf);
+@font-face {
+  font-family: "ProximaNova";
+  src: local("ProximaNova-Regular"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Regular.woff2") format("woff2"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: local("ProximaNova-RegularItalic"), url("https://cdn.lyft.com/static/coreui/ProximaNova-RegularItalic.woff2") format("woff2"), url("https://cdn.lyft.com/static/coreui/ProximaNova-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: local("ProximaNova-Medium"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Medium.woff2") format("woff2"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: local("ProximaNova-Bold"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Bold.woff2") format("woff2"), url("https://cdn.lyft.com/static/coreui/ProximaNova-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "LyftPro-Bold";
+  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LyftPro-Regular";
+  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LyftPro-SemiBold";
+  src: url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-SemiBold.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-stack: (
+  proxima: (
+    "ProximaNova-Regular", Helvetica, Arial, sans-serif
+  ),
+  
+  lyft-pro-regular: (
+    "LyftPro-Regular", Helvetica, Arial, sans-serif
+  ),
+  lyft-pro-bold: (
+    "LyftPro-Bold", Helvetica, Arial, sans-serif
+  ),
+  lyft-pro-semibold: (
+    "LyftPro-SemiBold", Helvetica, Arial, sans-serif
+  ),
+);
+
+$font-weight: (
+  extra-light: 200,
+  light: 300,
+  normal: 400,
+  semi-bold: 500,
+  bold: 600,
+  extra-bold: 700,
+  heavy: 800,
+  black: 900,
+);
+
+/* -------------------------------------------------------------------------- */
+/*                               Color Variables                              */
+/* -------------------------------------------------------------------------- */
+
+$color: (
+  transparent: transparent,
+  body: #11111F,
+  white: #ffffff,
+  grey: #f5f5f5,
+  light-pink: #ffd6e5,
+  pink: #ff00bf,
+  light-purple: #c8cbfc,
+  purple: #785ef0,
+  dark-purple: #524abf,
+);
