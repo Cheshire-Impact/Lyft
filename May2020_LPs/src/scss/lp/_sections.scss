@@ -136,9 +136,15 @@ section#four-icons {
       margin-bottom: 1rem;
       padding-left: 60px;
       counter-increment: video-counter;
+      padding-top: 0;
+      /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+      @media (min-width: 768px) {  
+        padding-top: .5em;
+      }
       /* Large devices (desktops, 992px and up) */
       @media (min-width: 992px) { 
         padding-right: 8rem;
+        padding-top: 0;
       }
       &::before{
         content: counter(video-counter);
@@ -150,9 +156,10 @@ section#four-icons {
         text-align: center;
         color: color(body);
         @include font-size(28px);
-        line-height: 40px;
+        line-height: 36px;
         border: 2px solid color(body);
         border-radius: 50%;
+
        
       }
     }
@@ -349,7 +356,7 @@ footer {
 // Modal Form Pop-up
 
 #pardotModal{
-  background-color: color(purple);
+  background-color: #5145c1;
   color: #d1d7f4;
   .modal-dialog {
     background-color: color(transparent);
@@ -369,10 +376,22 @@ footer {
     flex-direction: column;
     h2 {
       display: block;
-      @include font-size(48px);
+      @include font-size(60px);
+      line-height: 62px;
+      letter-spacing: -2.5px;
+      margin: 0 0 30px;
+      /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+      @media (min-width: 768px) {  
+        @include font-size(80px);
+        letter-spacing: -2.8px;
+        line-height: 82px;
+      }
     }
     p {
+      font-family: font-stack(lyft-pro-light),
       display: block;
+      @include font-size(16px);
+      line-height: 22px;
     }
   }
   button.close {

@@ -2,8 +2,8 @@
 /*                               Font Variables                               */
 /* -------------------------------------------------------------------------- */
 
-@import url(http://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Bold.otf);
-@import url(http://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Regular.otf);
+@import url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Bold.otf);
+@import url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-Regular.otf);
 @import url(https://lyft-assets.s3.amazonaws.com/font/Lyft%20Pro/LyftPro-SemiBold.otf);
 @font-face {
   font-family: "ProximaNova";
@@ -51,12 +51,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Lyft Pro Light";
+  src: url("../fonts/LyftPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/LyftPro-Light.woff2") format("woff2"), url("../fonts/LyftPro-Light.woff") format("woff"), url("../fonts/LyftPro-Light.ttf") format("truetype"), url("../fonts/LyftPro-Light.svg#LyftPro-Light") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
 
 $font-stack: (
   proxima: (
     "ProximaNova-Regular", Helvetica, Arial, sans-serif
   ),
-  
+  lyft-pro-light: (
+    "Lyft Pro Light", Helvetica, Arial, sans-serif
+  ),
   lyft-pro-regular: (
     "LyftPro-Regular", Helvetica, Arial, sans-serif
   ),

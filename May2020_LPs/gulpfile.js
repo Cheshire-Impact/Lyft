@@ -1,6 +1,5 @@
 const gulp = require("gulp");
 const nunjucksRender = require("gulp-nunjucks-render");
-const sass = require("gulp-sass");
 const data = require("gulp-data");
 
 gulp.task("default", function () {
